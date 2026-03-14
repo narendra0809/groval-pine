@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Tomato Grotesk";
+  background-color: #fdfbf7;
+}
+
+.text-primary {
+  color: #cda45c;
+}
+
+.text-secondary {
+  color: #333333;
+}
+
+.bg-primary {
+  background-color: #cda45c;
+}
+
+.bg-secondary {
+  background-color: #f6efe1;
+}
+
+.bg-dark {
+  background-color: #c9a65d4d;
+}
+
+.active {
+  color: #cda45c;
+}
