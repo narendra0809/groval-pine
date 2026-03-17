@@ -2,13 +2,13 @@ const ProductCard = ({ imgSrc, text, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="group relative cursor-pointer overflow-hidden rounded-[20px] bg-white shadow-md hover:shadow-2xl transition-all duration-500"
+      className="group relative cursor-pointer overflow-hidden rounded-[20px] bg-white shadow-md hover:shadow-2xl transition-all duration-500 w-full h-[380px] sm:h-[400px] mx-auto"
     >
       {/* Image */}
       <img
         src={imgSrc}
         alt={text}
-        className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
       />
 
       {/* Gradient overlay */}

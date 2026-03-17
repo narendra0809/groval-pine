@@ -14,11 +14,10 @@ const ProductInfoSection = ({
     return (
         <section className="py-14">
             <div
-                className={`max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center ${reverse ? "md:flex-row-reverse" : ""
-                    }`}
+                className={`max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center`}
             >
                 {/* Image */}
-                <div className="flex justify-center">
+                <div className={`flex justify-center ${reverse ? "md:order-2" : "md:order-1"}`}>
                     <img
                         src={image}
                         alt={title}
@@ -27,7 +26,7 @@ const ProductInfoSection = ({
                 </div>
 
                 {/* Content */}
-                <div>
+                <div className={`${reverse ? "md:order-1" : "md:order-2"}`}>
                     {/* Heading */}
                     <div className="mb-6">
                         <p className="text-secondary text-2xl md:text-5xl font-semibold">
